@@ -1,7 +1,9 @@
-# zengons
+#Zengons
 
 
 Makes nested sequence of triangles.
+
+See .svg for examples 
 
 
 ##Installation 
