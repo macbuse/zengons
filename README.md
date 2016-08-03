@@ -10,6 +10,7 @@ that makes nested sequence of triangles.
 
 ##Installation 
 
+1. Edit the first line of zenagram.py to point to your python installation if you don't use [Anaconda](https://www.continuum.io/downloads).
 1. Copy the .inx and .py to  inkscape extensions folder :
 For OS X - $HOME/.config/inkscape/extensions
 1. Open Inkscape. 
@@ -17,7 +18,7 @@ For OS X - $HOME/.config/inkscape/extensions
 
 ##Dependencies
 
-Probably needs python 2.7*
+Needs Anaconda python on OS X.
 
 
 
