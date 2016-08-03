@@ -1,7 +1,7 @@
 #Zengons
 
-
-Makes nested sequence of triangles.
+[Inkscape](https://inkscape.org/en/) extension 
+makes nested sequence of triangles.
 
 See .svg for examples 
 
