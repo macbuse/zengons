@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+	<!-- _name must have same name as .py file but capitalise it. Shows on Menu this way-->
+	<_name>Zengon Maker 0.1</_name>
+	<!-- id should be unique. Associates entered values with this menu -->
+	<id>githubacct.uniqueid.Name_of_your_extension</id>
+	<!-- mention a dependency here and will check for existence (optional)-->
+	<dependency type="executable" location="extensions">zenagram.py</dependency>
+	<dependency type="executable" location="extensions">simplestyle.py</dependency>
+
+	<!-- start notebook -->
+	<param name='active-tab' type="notebook">
+		<!-- one per page(tab) - unique names. Can discover which page in program-->
+		<page name="title" _gui-text="Settings">
+			<param name="num_lines" type="int"   min="2"    max="20"    _gui-text="Depth">10</param>
+			<param name="shrink_ratio"  type="float" min="0.2"  max="2.0"  precision="2"  _gui-text="Shrink speed">0.2</param>
+
+			<_param name="help"   type="description" xml:space="preserve">------------------------------</_param>
+			<param name="mk_edges" type="boolean" _gui-text="Render edges">true</param>
+			<param name="mk_filled" type="boolean" _gui-text="Filled">false</param>
+		</page>
+		<!-- next tab -->
+
+		<page name="Usage1" _gui-text="Usage">
+			<!-- space:preserve read for neat layout -->
+			<_param name="use1" type="description" xml:space="preserve">
+		Make a sequence of nested triangles:
+		
+		Depth - number of triangles
+		Shrink speed - speed that the triangles get smaller
+		
+		Render edges - draw the biggest triangle
+		
+			</_param>
+		</page>
+		<page name="Usage2" _gui-text="Help">
+			<_param name="use2" type="description" xml:space="preserve">
+			No help needed.
+
+			</_param>
+		</page>
+	</param>
+	<!-- classify which menu it appears under - can be new name -->
+	<effect>
+	<object-type>all</object-type>
+		<effects-menu>
+			<submenu _name="Render"/> 
+		</effects-menu>
+	</effect>
+	<!-- py file again -->
+	<script>
+		<command reldir="extensions" interpreter="python">zenagram.py</command>
+	</script>
+</inkscape-extension>
