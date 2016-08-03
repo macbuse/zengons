@@ -14,6 +14,10 @@ then open inkscape.
 
 Activate via the Render submenu of Extensions menu.
 
+##Dependencies
+
+Probably needs python 2.7*
+
 
 
 
