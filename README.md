@@ -3,7 +3,7 @@
 [Inkscape](https://inkscape.org/en/) extension 
 that makes nested sequence of triangles.
 
-##Example Inkscape file
+###Example Inkscape file
 
 [example](https://github.com/macbuse/zengons/blob/master/zengram5.svg)
 
